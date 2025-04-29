@@ -1,6 +1,5 @@
 import { createSlice, nanoid } from '@reduxjs/toolkit';
 
-// Load transactions from localStorage if available
 const savedTransactions = JSON.parse(localStorage.getItem('transactions')) || [];
 
 const transactionsSlice = createSlice({
@@ -16,7 +15,7 @@ const transactionsSlice = createSlice({
       },
       prepare: (transaction) => {
         return { payload: { id: nanoid(), ...transaction } };
-      }
+      } 
     },
     updateTransaction: (state, action) => {
       const { id, ...updatedFields } = action.payload;
