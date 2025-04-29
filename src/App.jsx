@@ -24,7 +24,7 @@ function App() {
         </nav>
 
         <Routes>
-          <Route path="/redux-task/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/edit-transaction/:id" element={<EditTransaction />} />
 

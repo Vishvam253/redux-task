@@ -5,6 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/redux-task/',
+  base: '/',
   plugins: [react(), tailwindcss(),],
 })
